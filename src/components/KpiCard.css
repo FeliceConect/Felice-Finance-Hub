@@ -1,0 +1,32 @@
+.kpi-card{
+  border:1px solid #e2e2e2;
+  border-radius:6px;
+  padding:16px;
+  flex:1 1 220px;      /* cresce mas não fica menor que 220 */
+  box-shadow:2px 2px 4px #0001;
+}
+
+.kpi-label{
+  font-size:0.8rem;
+  color:#555;
+  margin-bottom:4px;
+}
+
+.kpi-value{
+  font-size:1.4rem;
+  font-weight:600;
+  margin-bottom:4px;
+}
+
+.kpi-sub{
+  font-size:0.75rem;
+  color:#777;
+}
+
+.kpi-delta{
+  font-size:0.75rem;
+  margin-top:6px;
+}
+
+.kpi-delta.up{ color:#0a8a46; }
+.kpi-delta.down{ color:#d03636; }

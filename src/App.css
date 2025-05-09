@@ -1,0 +1,97 @@
+/* src/App.css */
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: system-ui, sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #f8fafc;
+  border-right: 1px solid #e2e8f0;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.nav-section {
+  margin-bottom: 1.5rem;
+}
+
+.nav-group {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.75rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #334155;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar li.active a,
+.sidebar a:hover {
+  color: #1d4ed8;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  background: #fff;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+/* MonthSelector */
+.month-selector {
+  /* tamanho compacto */
+  min-width: 8rem;
+  max-width: 12rem;
+  height: 2.5rem;
+  padding: 0.3rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+
+  /* bordas suaves */
+  border: 1px solid #cbd5e0;      /* cinza claro */
+  border-radius: 0.375rem;        /* 6px */
+
+  /* background e texto */
+  background-color: #ffffff;
+  color: #1f2937;                 /* cinza-escuro */
+  appearance: none;               /* remove flecha padrão em WebKit */
+
+  /* ícone customizado */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2212%22%20height%3D%227%22%20viewBox%3D%220%200%2012%207%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M6%207l6-7H0z%22%20fill%3D%22%233182ce%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 12px 7px;
+}
+
+.month-selector:focus {
+  outline: none;
+  border-color: #3182ce; /* azul */
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.3);
+}
